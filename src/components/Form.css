@@ -1,0 +1,116 @@
+.rjsf > .form-group {
+  padding: 0;
+  border: none;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+/* Adjustment for Basic Elements
+================================*/
+
+.rjsf fieldset {
+  width: 100%;
+}
+
+.rjsf label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.rjsf .ui.form select {
+  height: 38px;
+}
+
+.checkbox {
+  line-height: 38px;
+}
+
+/* Object Field
+===============*/
+
+.field-object {
+  border: 1px solid #ddd;
+  padding: 18px 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .field-object {
+    padding: 18px 1em;
+  }
+}
+
+.field-object-props {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -6px;
+}
+.field-object-props > * {
+  flex: 1 auto;
+  margin: 6px;
+  min-width: 200px;
+}
+.field-object-props > .field-array,
+.field-object-props > .field-object,
+.field-object-props > .widget-textarea {
+  flex: 1 100%;
+}
+
+.field-boolean > label {
+  display: none;
+}
+.field-object-props > .field-boolean {
+  order: 100;
+  min-width: auto;
+}
+
+/* Array Field
+==============*/
+
+.array-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.array-item > .field {
+  flex-grow: 1;
+}
+
+.array-item > .field > label {
+  display: none;
+}
+
+.ui.button.array-rm-item {
+  display: block;
+  margin-left: 8px;
+}
+
+.field-object + .ui.button.array-rm-item {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  border-radius: 0 4px 0 4px;
+}
+
+/* Accessories
+==============*/
+
+.field-heading {
+  margin-bottom: 12px;
+}
+.field-heading > h3 {
+  margin-bottom: 0;
+}
+
+.field-help {
+  margin-top : 4px;
+  color: #999;
+}
+
+/* WORKAROUND: many empty <div> elements are in the Form! */
+div:empty, p:empty {
+  display: none;
+}

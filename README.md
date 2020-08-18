@@ -1,0 +1,2 @@
+Thank you for your interest in Elinvar. To proceed with your interview process, we have prepared a short coding exercise for you.
+To start case study you need to build and start this small react projects locally and follow detailed instructions.
